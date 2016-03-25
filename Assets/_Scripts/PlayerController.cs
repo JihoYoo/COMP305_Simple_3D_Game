@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿// 
 // Author: Jiho Yoo
 // Date: March 25, 2016
@@ -120,4 +121,29 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+=======
+﻿/*
+ *  Jiho Yoo / 300813612
+ */
+using UnityEngine;
+using System.Collections;
+
+public class PlayerController : MonoBehaviour {
+
+	//PUBLIC MEMBER VARIABLES
+	public Transform flashPoint;
+	public GameObject muzzleFlash;
+
+	// Use this for initialization
+	void Start () {
+	
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		if (Input.GetButtonDown ("Fire1")) {
+			Instantiate (this.muzzleFlash, flashPoint.position, Quaternion.identity);
+		}
+	}
+>>>>>>> 90d5fbd4f1b7f172cc75a373fcb705911cb13f3f
 }
